@@ -1,0 +1,25 @@
+.home-container {
+    background-color: lightseagreen;
+    margin: 0;
+    height: 70vh;
+    min-width: 1000px;
+    border-style: hidden;
+    box-shadow: 2px 15px 25px 3px slategrey;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.container {
+    margin: 50px;
+    padding: 0px;
+    width: 100%;
+}
+.row {
+    margin: 0;
+    display: block;
+    padding: 10px;
+}

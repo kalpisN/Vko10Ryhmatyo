@@ -1,0 +1,11 @@
+.App {
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  background-color: lightgrey;
+}
+
+.App .trolli {
+  width: 1000px;
+  height: 1000px;
+}
