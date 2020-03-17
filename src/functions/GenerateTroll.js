@@ -15,31 +15,31 @@ class GenerateTroll extends Component {
         this.state = {
             'userdata': [],
             'jokes': [],
-       /*     loading: true*/
+            loading: true
         }
     }
-    componentDidMount() {
+    async componentDidMount() {
 
         const url = API_BASE_URL + '/henkilo';
         const url2 = API_BASE_URL + '/trollivitsi';
-        fetch(url, {method: 'GET'})
+        await fetch(url, {method: 'GET'})
             .then(response => response.json())
-            .then(response => this.setState({'userdata': response}))
+            .then(response => this.setState({'userdata': response}));
 
 
-        fetch(url2, {method: 'GET'})
+        await fetch(url2, {method: 'GET'})
             .then(response => response.json())
-            .then(response => this.setState({'jokes': response})
-/*            this.setState(prevState => ({
-            loading: !prevState.loading*/
-     /*   })*/)
+            .then(response => this.setState({'jokes': response}))
+            .then(response => this.setState( {
+            loading: false
+        }));
     }
 
     render() {
-/*        if (this.state.loading) {
+       if (this.state.loading) {
             return (
                 <Loading/>)
-        }*/
+        }
         return (
                 <Container>
                     <CardColumns>
@@ -54,6 +54,7 @@ class GenerateTroll extends Component {
                                     <Row>
                                         {this.state.userdata.city}, {this.state.userdata.country}
                                     </Row>
+                                    <Row>{this.state.userdata.email}</Row>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

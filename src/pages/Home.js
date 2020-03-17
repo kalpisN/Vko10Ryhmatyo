@@ -21,7 +21,7 @@ class Home extends Component {
                     <Row>and email address and even send you all the information via email!</Row>
                     <Row>CLICK THE TROLL TO START TROLLING</Row>
                     <Row>WITH YOUR NEW FAKE IDENTITY!</Row>
-                    <Row><Blink color='blue' text={<a href="/fake"><iMG className="trollikuva" src="troll.png"/></a>}></Blink></Row>
+                    <Row><Blink color='blue' text={<a href="/fake"><img className="trollikuva" src="troll.png"/></a>}></Blink></Row>
 
                 </Col>
             </Container>

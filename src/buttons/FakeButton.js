@@ -14,11 +14,11 @@ class FakeButton extends Component {
                     <Row></Row>
                     <Row>JUST PRESS THE GENERATE BUTTON</Row>
                     <Row></Row>
-                    <Row><Button variant="secondary" size="large">{<a href="/generate">GENERATE</a>}</Button></Row>
-                    <Row></Row>
                     <Row>AND YOU CAN START TROLLING</Row>
                     <Row></Row>
                     <Row>WITH YOUR NEW FAKE IDENTITY!</Row>
+                    <Row></Row>
+                    <Row><Button variant="secondary" size="large">{<a href="/generate">GENERATE</a>}</Button></Row>
                 </Col>
             </Container>
 

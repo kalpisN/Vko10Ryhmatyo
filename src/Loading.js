@@ -6,9 +6,9 @@ export default function Loading() {
 
     return (
         <Loader type="Hearts"
-                color="#6087c4"
-                height={100}
-                width={100}
+                color="red"
+                height={350}
+                width={350}
         />
     )
 }
